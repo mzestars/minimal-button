@@ -1,0 +1,36 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.60'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    // Ref: https://github.com/FarbodSalamat-Zadeh/UsefulViews/commit/e73495caae344ddf08f3be88bc7a620f5dfdf1be
+    tasks.withType(Javadoc) {
+        excludes = ['**/*.kt']
+        // Ignores errors from mavenAndroidJavadocs task
+        // (reference: github.com/novoda/bintray-release/issues/71#issuecomment-164324255)
+        options.addStringOption('Xdoclint:none', '-quiet')
+        options.addStringOption('encoding', 'UTF-8')
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
