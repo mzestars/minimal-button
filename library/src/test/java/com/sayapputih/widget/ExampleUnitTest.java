@@ -1,4 +1,4 @@
-package com.sayapputih.minimalbutton;
+package com.sayapputih.widget;
 
 import org.junit.Test;
 

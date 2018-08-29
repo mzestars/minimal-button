@@ -1,4 +1,4 @@
-package com.sayapputih.minimalbutton;
+package com.sayapputih.widget;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
