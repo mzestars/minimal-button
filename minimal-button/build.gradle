@@ -26,7 +26,7 @@ ext {
     siteUrl = 'https://github.com/mzestars/minimal-button'
     gitUrl = 'https://github.com/mzestars/minimal-button.git'
 
-    libraryVersion = '0.1'
+    libraryVersion = '0.1.1'
 
     developerId = 'mzestars'
     developerName = 'Mohd Zulfadhli Ab Rashid'
