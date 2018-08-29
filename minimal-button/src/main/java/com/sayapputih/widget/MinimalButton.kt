@@ -12,7 +12,9 @@ import android.util.TypedValue
 class MinimalButton @JvmOverloads constructor(context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = R.attr.buttonStyle) :
-    AppCompatButton(initMinimalDrawable(context, attrs, defStyleAttr), attrs, defStyleAttr) {
+    AppCompatButton(
+        initMinimalDrawable(context, attrs,
+            defStyleAttr), attrs, defStyleAttr) {
 
     companion object {
 
